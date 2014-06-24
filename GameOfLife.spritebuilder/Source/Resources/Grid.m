@@ -164,7 +164,9 @@ static const int GRID_COLUMNS = 10;
             }else {
                 [currentCreature setIsAlive:FALSE];
             }
+ 
         }
+    }
 }
 
 @end
