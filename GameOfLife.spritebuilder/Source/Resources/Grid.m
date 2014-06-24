@@ -163,8 +163,9 @@ static const int GRID_COLUMNS = 10;
             if (currentCreature.livingNeighbors == 3 || currentCreature.livingNeighbors == 2){
                 [currentCreature setIsAlive:TRUE];
                 numAlive++;
-//            }if (!currentCreature.isAlive && currentCreature.livingNeighbors == 3){
-//                [currentCreature setIsAlive:TRUE];
+            }
+            else if (!currentCreature.isAlive && currentCreature.livingNeighbors == 3){
+                [currentCreature setIsAlive:TRUE];
             }
             if (currentCreature.livingNeighbors>3){
                 [currentCreature setIsAlive:FALSE];
